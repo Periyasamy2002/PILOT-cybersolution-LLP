@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecOps - Security Operations Portal</title>
+    <link rel="stylesheet" href="shared-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav class="custom-navbar">
+        <div class="nav-brand">
+            <img src="images/logo.webp" alt="5Pilot Logo">
+        </div>
+
+        <input type="checkbox" id="nav-check">
+        <label for="nav-check" class="nav-toggler">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="vuln_pilot.html">Vuln Pilot</a></li>
+            
+            <li class="nav-dropdown">
+                <a href="javascript:void(0)" class="dropdown-trigger">
+                    SecOps Center <i class="fas fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="Operations.html">D1: Operations</a></li>
+                    <li><a href="Compliance.html">D3: Compliance</a></li>
+                    <li><a href="Phoenix_DR.html">D4: Phoenix DR</a></li>
+                    <li><a href="CloudSecApps.html">D5: CloudSecApps</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="SecOps.html">SecOps</a></li>
+            <li><a href="Contact_Us.html">Contact Us</a></li>
+            <li><a href="project_developer.html">Project Developer</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section style="padding: 100px 40px; background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(37, 99, 235, 0.8) 100%), url('images/sec.jpg');  background-size: cover;  background-position: center; background-attachment: fixed; color: white;">
+            <div style="max-width: 1200px; margin: 0 auto;">
+                <h1 class="page-title" style="color: #d9dde9;">Security <span class="highlight">Operations Center</span> <i class="fas fa-tv" style="color: #aec4f3; margin-left: 15px;"></i></h1>
+                <p class="page-subtitle" style="color: #c5c9ec;">Comprehensive security operations and threat management platform</p>
+            </div>
+        </section>
+
+        <section style="padding: 80px 40px; max-width: 1200px; margin: 0 auto;">
+            <div class="content-card" style="background: linear-gradient(135deg, #141f38 0%, #213258 50%, #1a2449 100%); color: white; border-radius: 16px; padding: 50px; box-shadow: 0 20px 50px rgba(37, 99, 235, 0.25); position: relative; overflow: hidden;">
+                <div style="position: absolute; top: -50px; right: -50px; width: 300px; height: 300px; background: rgba(255, 255, 255, 0.1); border-radius: 50%; filter: blur(80px);"></div>
+                <div style="position: absolute; bottom: -80px; left: -80px; width: 350px; height: 350px; background: rgba(173, 216, 230, 0.1); border-radius: 50%; filter: blur(80px);"></div>
+                
+                <div style="position: relative; z-index: 1;">
+                    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <div style="width: 60px; height: 60px; background: rgba(255, 255, 255, 0.15); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-right: 20px; backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);">
+                            <i class="fas fa-dashboard" style="color: #aec4f3; font-size: 1.8rem;"></i>
+                        </div>
+                        <h3 style="color: white; margin: 0; font-size: 1.8rem; font-weight: 700;">SecOps Platform Overview</h3>
+                    </div>
+                    
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: #e0e7ff; margin: 30px 0;">The 5Pilot SecOps platform is your <strong>centralized hub for all security operations</strong>. Monitor threats, manage incidents, and coordinate response activities across your entire security infrastructure with our <strong>integrated dashboard</strong> and powerful tools.</p>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 30px;">
+                        <div style="padding: 20px; background: rgba(255, 255, 255, 0.08); border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.15); backdrop-filter: blur(10px);">
+                            <div style="color: #aec4f3; font-size: 1.4rem; margin-bottom: 10px;"><i class="fas fa-eye"></i></div>
+                            <p style="font-weight: 600; color: white; margin: 0 0 8px 0;">Unified Visibility</p>
+                            <p style="font-size: 0.9rem; color: #c7d2fe; margin: 0;">See your entire security stack in one place</p>
+                        </div>
+                        <div style="padding: 20px; background: rgba(255, 255, 255, 0.08); border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.15); backdrop-filter: blur(10px);">
+                            <div style="color: #aec4f3; font-size: 1.4rem; margin-bottom: 10px;"><i class="fas fa-bolt"></i></div>
+                            <p style="font-weight: 600; color: white; margin: 0 0 8px 0;">Real-time Insights</p>
+                            <p style="font-size: 0.9rem; color: #c7d2fe; margin: 0;">Instant threat detection and correlation</p>
+                        </div>
+                        <div style="padding: 20px; background: rgba(255, 255, 255, 0.08); border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.15); backdrop-filter: blur(10px);">
+                            <div style="color: #aec4f3; font-size: 1.4rem; margin-bottom: 10px;"><i class="fas fa-shield-alt"></i></div>
+                            <p style="font-weight: 600; color: white; margin: 0 0 8px 0;">Automated Protection</p>
+                            <p style="font-size: 0.9rem; color: #c7d2fe; margin: 0;">Intelligent threat remediation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           <div class="content-card" style="background: #ffffff; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+    <h3 style="margin-bottom: 30px; display: flex; align-items: center;">
+        <i class="fas fa-rocket" style="color: #2563eb; margin-right: 12px; background: #eff6ff; padding: 10px; border-radius: 8px;"></i>
+        Platform Capabilities
+    </h3>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+        
+        <div style="padding: 20px; border: 1px solid #e2e8f0; border-radius: 10px; transition: transform 0.3s ease; cursor: default;" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='#2563eb';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='#e2e8f0';">
+            <div style="color: #2563eb; font-size: 1.5rem; margin-bottom: 10px;"><i class="fas fa-shield-virus"></i></div>
+            <h4 style="color: #1f376b; margin-bottom: 8px;">Real-time Threat Intelligence</h4>
+            <p style="font-size: 0.9rem; color: #64748b; line-height: 1.5;">Advanced threat detection and continuous monitoring across all endpoints.</p>
+        </div>
+
+        <div style="padding: 20px; border: 1px solid #e2e8f0; border-radius: 10px; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='#2563eb';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='#e2e8f0';">
+            <div style="color: #2563eb; font-size: 1.5rem; margin-bottom: 10px;"><i class="fas fa-project-diagram"></i></div>
+            <h4 style="color: #1f376b; margin-bottom: 8px;">Incident Management</h4>
+            <p style="font-size: 0.9rem; color: #64748b; line-height: 1.5;">End-to-end incident orchestration to streamline your security response.</p>
+        </div>
+
+        <div style="padding: 20px; border: 1px solid #e2e8f0; border-radius: 10px; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='#2563eb';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='#e2e8f0';">
+            <div style="color: #2563eb; font-size: 1.5rem; margin-bottom: 10px;"><i class="fas fa-robot"></i></div>
+            <h4 style="color: #1f376b; margin-bottom: 8px;">Automated Response</h4>
+            <p style="font-size: 0.9rem; color: #64748b; line-height: 1.5;">Intelligent threat remediation and containment without manual intervention.</p>
+        </div>
+
+        <div style="padding: 20px; border: 1px solid #e2e8f0; border-radius: 10px; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='#2563eb';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='#e2e8f0';">
+            <div style="color: #2563eb; font-size: 1.5rem; margin-bottom: 10px;"><i class="fas fa-chart-pie"></i></div>
+            <h4 style="color: #1f376b; margin-bottom: 8px;">Security Dashboards</h4>
+            <p style="font-size: 0.9rem; color: #64748b; line-height: 1.5;">Visualizing complex data through customizable metrics and KPI tracking.</p>
+        </div>
+
+        <div style="padding: 20px; border: 1px solid #e2e8f0; border-radius: 10px; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='#2563eb';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='#e2e8f0';">
+            <div style="color: #2563eb; font-size: 1.5rem; margin-bottom: 10px;"><i class="fas fa-users-cog"></i></div>
+            <h4 style="color: #1f376b; margin-bottom: 8px;">Multi-Team Collaboration</h4>
+            <p style="font-size: 0.9rem; color: #64748b; line-height: 1.5;">Break down silos with integrated communication and unified workflows.</p>
+        </div>
+
+        <div style="padding: 20px; border: 1px solid #e2e8f0; border-radius: 10px; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='#2563eb';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='#e2e8f0';">
+            <div style="color: #2563eb; font-size: 1.5rem; margin-bottom: 10px;"><i class="fas fa-file-contract"></i></div>
+            <h4 style="color: #1f376b; margin-bottom: 8px;">Compliance Reporting</h4>
+            <p style="font-size: 0.9rem; color: #64748b; line-height: 1.5;">Automated audit trails and evidence collection for easy regulatory filing.</p>
+        </div>
+
+    </div>
+</div>
+
+           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin: 50px 0;">
+    
+    <div class="content-card" style="text-align: center; padding: 40px 25px; border: none; background: #ffffff; border-radius: 20px; box-shadow: 0 10px 30px rgba(37, 99, 235, 0.1); transition: all 0.3s ease;" 
+         onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(37, 99, 235, 0.15)';" 
+         onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(37, 99, 235, 0.1)';">
+        <div style="width: 70px; height: 70px; background: #eff6ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+            <i class="fas fa-tachometer-alt" style="font-size: 2rem; color: #2563eb;"></i>
+        </div>
+        <h4 style="color: #1f376b; font-size: 1.25rem; margin-bottom: 12px;">Faster Detection</h4>
+        <p style="font-size: 0.95rem; color: #64748b; line-height: 1.6;">Reduce <strong>Mean Time to Detect (MTTD)</strong> with advanced analytics and automated threat correlation.</p>
+    </div>
+
+    <div class="content-card" style="text-align: center; padding: 40px 25px; border: none; background: #ffffff; border-radius: 20px; box-shadow: 0 10px 30px rgba(37, 99, 235, 0.1); transition: all 0.3s ease;" 
+         onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(37, 99, 235, 0.15)';" 
+         onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(37, 99, 235, 0.1)';">
+        <div style="width: 70px; height: 70px; background: #eff6ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+            <i class="fas fa-bolt" style="font-size: 2rem; color: #2563eb;"></i>
+        </div>
+        <h4 style="color: #1f376b; font-size: 1.25rem; margin-bottom: 12px;">Faster Response</h4>
+        <p style="font-size: 0.95rem; color: #64748b; line-height: 1.6;">Cut <strong>Mean Time to Respond (MTTR)</strong> with automated playbooks and orchestration.</p>
+    </div>
+
+    <div class="content-card" style="text-align: center; padding: 40px 25px; border: none; background: #ffffff; border-radius: 20px; box-shadow: 0 10px 30px rgba(37, 99, 235, 0.1); transition: all 0.3s ease;" 
+         onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(37, 99, 235, 0.15)';" 
+         onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(37, 99, 235, 0.1)';">
+        <div style="width: 70px; height: 70px; background: #eff6ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+            <i class="fas fa-users-gear" style="font-size: 2rem; color: #2563eb;"></i>
+        </div>
+        <h4 style="color: #1f376b; font-size: 1.25rem; margin-bottom: 12px;">Team Efficiency</h4>
+        <p style="font-size: 0.95rem; color: #64748b; line-height: 1.6;">Boost <strong>team productivity</strong> with collaborative workflows and intuitive interfaces.</p>
+    </div>
+
+</div>
+
+            <div class="content-card" style="border-radius: 20px; padding: 60px 50px; position: relative; overflow: hidden;">
+                <div style="position: relative; z-index: 2;">
+                    <div style="margin-bottom: 50px;">
+                        <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-right: 20px; box-shadow: 0 10px 30px rgba(37, 99, 235, 0.4); position: relative;">
+                                <div style="position: absolute; inset: -3px; background: linear-gradient(135deg, #2563eb, #60a5fa); border-radius: 14px; opacity: 0.3; filter: blur(8px);"></div>
+                                <i class="fas fa-cogs" style="color: white; font-size: 1.8rem; position: relative; z-index: 1;"></i>
+                            </div>
+                            <div>
+                                <h3 style="color: #0c4a6e; margin: 0; font-size: 2rem; font-weight: 800;">Key Features</h3>
+                                <p style="color: #0284c7; margin: 5px 0 0 0; font-size: 0.9rem; font-weight: 600;">Enterprise-grade capabilities</p>
+                            </div>
+                        </div>
+                        <p style="color: #64748b; font-size: 1.1rem; margin: 0; line-height: 1.6;">Everything you need for modern security operations:</p>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;">
+                        <div style="padding: 25px; background: linear-gradient(135deg, rgba(37, 99, 235, 0.08) 0%, rgba(37, 99, 235, 0.03) 100%); border-radius: 16px; border: 1.5px solid rgba(37, 99, 235, 0.2); transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); cursor: pointer; position: relative; overflow: hidden;" onmouseover="this.style.transform='translateY(-12px)'; this.style.borderColor='#2563eb'; this.style.boxShadow='0 15px 40px rgba(37, 99, 235, 0.15)'; this.style.backgroundColor='rgba(37, 99, 235, 0.12)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(37, 99, 235, 0.2)'; this.style.boxShadow='none'; this.style.backgroundColor='rgba(37, 99, 235, 0.03)';">
+                            <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #2563eb, #60a5fa); transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease;" class="feature-bar"></div>
+                            <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4); position: relative;">
+                                <i class="fas fa-chart-line" style="color: white; font-size: 1.3rem;"></i>
+                            </div>
+                            <p style="font-weight: 800; color: #2563eb; margin-bottom: 8px; font-size: 1rem;">Real-time Analytics</p>
+                            <p style="font-size: 0.85rem; color: #64748b; line-height: 1.6; margin: 0;">Live threat intelligence and trend analysis</p>
+                        </div>
+
+                        <div style="padding: 25px; background: linear-gradient(135deg, rgba(217, 119, 6, 0.08) 0%, rgba(217, 119, 6, 0.03) 100%); border-radius: 16px; border: 1.5px solid rgba(217, 119, 6, 0.2); transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); cursor: pointer; position: relative; overflow: hidden;" onmouseover="this.style.transform='translateY(-12px)'; this.style.borderColor='#d97706'; this.style.boxShadow='0 15px 40px rgba(217, 119, 6, 0.15)'; this.style.backgroundColor='rgba(217, 119, 6, 0.12)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(217, 119, 6, 0.2)'; this.style.boxShadow='none'; this.style.backgroundColor='rgba(217, 119, 6, 0.03)';">
+                            <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #d97706, #fbbf24); transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease;" class="feature-bar"></div>
+                            <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #d97706 0%, #b45309 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; box-shadow: 0 8px 25px rgba(217, 119, 6, 0.4); position: relative;">
+                                <i class="fas fa-magic" style="color: white; font-size: 1.3rem;"></i>
+                            </div>
+                            <p style="font-weight: 800; color: #d97706; margin-bottom: 8px; font-size: 1rem;">Smart Automation</p>
+                            <p style="font-size: 0.85rem; color: #64748b; line-height: 1.6; margin: 0;">Playbooks and automatic response triggers</p>
+                        </div>
+
+                        <div style="padding: 25px; background: linear-gradient(135deg, rgba(99, 102, 241, 0.08) 0%, rgba(99, 102, 241, 0.03) 100%); border-radius: 16px; border: 1.5px solid rgba(99, 102, 241, 0.2); transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); cursor: pointer; position: relative; overflow: hidden;" onmouseover="this.style.transform='translateY(-12px)'; this.style.borderColor='#6366f1'; this.style.boxShadow='0 15px 40px rgba(99, 102, 241, 0.15)'; this.style.backgroundColor='rgba(99, 102, 241, 0.12)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(99, 102, 241, 0.2)'; this.style.boxShadow='none'; this.style.backgroundColor='rgba(99, 102, 241, 0.03)';">
+                            <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #6366f1, #818cf8); transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease;" class="feature-bar"></div>
+                            <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; box-shadow: 0 8px 25px rgba(99, 102, 241, 0.4); position: relative;">
+                                <i class="fas fa-link" style="color: white; font-size: 1.3rem;"></i>
+                            </div>
+                            <p style="font-weight: 800; color: #6366f1; margin-bottom: 8px; font-size: 1rem;">API Integrations</p>
+                            <p style="font-size: 0.85rem; color: #64748b; line-height: 1.6; margin: 0;">Connect with 200+ security tools</p>
+                        </div>
+
+                        <div style="padding: 25px; background: linear-gradient(135deg, rgba(34, 197, 94, 0.08) 0%, rgba(34, 197, 94, 0.03) 100%); border-radius: 16px; border: 1.5px solid rgba(34, 197, 94, 0.2); transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); cursor: pointer; position: relative; overflow: hidden;" onmouseover="this.style.transform='translateY(-12px)'; this.style.borderColor='#22c55e'; this.style.boxShadow='0 15px 40px rgba(34, 197, 94, 0.15)'; this.style.backgroundColor='rgba(34, 197, 94, 0.12)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(34, 197, 94, 0.2)'; this.style.boxShadow='none'; this.style.backgroundColor='rgba(34, 197, 94, 0.03)';">
+                            <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #22c55e, #4ade80); transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease;" class="feature-bar"></div>
+                            <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; box-shadow: 0 8px 25px rgba(34, 197, 94, 0.4); position: relative;">
+                                <i class="fas fa-book" style="color: white; font-size: 1.3rem;"></i>
+                            </div>
+                            <p style="font-weight: 800; color: #22c55e; margin-bottom: 8px; font-size: 1rem;">Compliance Ready</p>
+                            <p style="font-size: 0.85rem; color: #64748b; line-height: 1.6; margin: 0;">Built for regulatory requirements</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                // Animate top bar on hover
+                document.querySelectorAll('.feature-bar').forEach(bar => {
+                    bar.parentElement.addEventListener('mouseenter', function() {
+                        bar.style.transform = 'scaleX(1)';
+                    });
+                    bar.parentElement.addEventListener('mouseleave', function() {
+                        bar.style.transform = 'scaleX(0)';
+                    });
+                });
+            </script>
+
+            <div style="border-radius: 24px; padding: 80px 60px; margin: 60px 0 40px 0; position: relative; overflow: hidden;">
+                <div style="position: relative; z-index: 2;">
+                    <div style="display: flex; align-items: center; margin-bottom: 50px;">
+                        <div style="width: 70px; height: 70px; background: rgba(37, 99, 235, 0.1); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-right: 25px; border: 2px solid #e2e8f0;">
+                            <i class="fas fa-crown" style="color: #0284c7; font-size: 2rem;"></i>
+                        </div>
+                        <div>
+                            <h2 style="color: #0c4a6e; margin: 0 0 10px 0; font-size: 2.5rem; font-weight: 900;">Why Choose Our SecOps Platform</h2>
+                            <p style="color: #64748b; margin: 0; font-size: 1.05rem; font-weight: 500;">Industry-leading security operations platform:</p>
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin-bottom: 50px;">
+                        <div style="padding: 0; display: flex; align-items: flex-start; transition: all 0.3s ease;" onmouseover="this.style.transform='translateX(15px)';" onmouseout="this.style.transform='translateX(0)';">
+                            <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-right: 20px; flex-shrink: 0; box-shadow: 0 10px 30px rgba(251, 191, 36, 0.3);">
+                                <i class="fas fa-brain" style="color: white; font-size: 1.5rem;"></i>
+                            </div>
+                            <div>
+                                <h4 style="color: #f59e0b; margin: 0 0 8px 0; font-size: 1.15rem; font-weight: 700;">Advanced AI/ML</h4>
+                                <p style="color: #64748b; margin: 0; font-size: 0.95rem; line-height: 1.6;">Combines advanced AI/ML with human expertise</p>
+                            </div>
+                        </div>
+
+                        <div style="padding: 0; display: flex; align-items: flex-start; transition: all 0.3s ease;" onmouseover="this.style.transform='translateX(15px)';" onmouseout="this.style.transform='translateX(0)';">
+                            <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-right: 20px; flex-shrink: 0; box-shadow: 0 10px 30px rgba(6, 182, 212, 0.3);">
+                                <i class="fas fa-shield-alt" style="color: white; font-size: 1.5rem;"></i>
+                            </div>
+                            <div>
+                                <h4 style="color: #0891b2; margin: 0 0 8px 0; font-size: 1.15rem; font-weight: 700;">Reduced Alert Fatigue</h4>
+                                <p style="color: #64748b; margin: 0; font-size: 0.95rem; line-height: 1.6;">Reduces alert fatigue with intelligent correlation</p>
+                            </div>
+                        </div>
+
+                        <div style="padding: 0; display: flex; align-items: flex-start; transition: all 0.3s ease;" onmouseover="this.style.transform='translateX(15px)';" onmouseout="this.style.transform='translateX(0)';">
+                            <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #ec4899 0%, #db2777 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-right: 20px; flex-shrink: 0; box-shadow: 0 10px 30px rgba(236, 72, 153, 0.3);">
+                                <i class="fas fa-tachometer-alt" style="color: white; font-size: 1.5rem;"></i>
+                            </div>
+                            <div>
+                                <h4 style="color: #db2777; margin: 0 0 8px 0; font-size: 1.15rem; font-weight: 700;">Better Metrics</h4>
+                                <p style="color: #64748b; margin: 0; font-size: 0.95rem; line-height: 1.6;">Improves MTTD and MTTR metrics significantly</p>
+                            </div>
+                        </div>
+
+                        <div style="padding: 0; display: flex; align-items: flex-start; transition: all 0.3s ease;" onmouseover="this.style.transform='translateX(15px)';" onmouseout="this.style.transform='translateX(0)';">
+                            <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #10b981 0%, #059669 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-right: 20px; flex-shrink: 0; box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);">
+                                <i class="fas fa-link" style="color: white; font-size: 1.5rem;"></i>
+                            </div>
+                            <div>
+                                <h4 style="color: #059669; margin: 0 0 8px 0; font-size: 1.15rem; font-weight: 700;">Seamless Integration</h4>
+                                <p style="color: #64748b; margin: 0; font-size: 0.95rem; line-height: 1.6;">Seamless integration with existing security tools</p>
+                            </div>
+                        </div>
+
+                        <div style="padding: 0; display: flex; align-items: flex-start; transition: all 0.3s ease;" onmouseover="this.style.transform='translateX(15px)';" onmouseout="this.style.transform='translateX(0)';">
+                            <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-right: 20px; flex-shrink: 0; box-shadow: 0 10px 30px rgba(139, 92, 246, 0.3);">
+                                <i class="fas fa-rocket" style="color: white; font-size: 1.5rem;"></i>
+                            </div>
+                            <div>
+                                <h4 style="color: #7c3aed; margin: 0 0 8px 0; font-size: 1.15rem; font-weight: 700;">Unlimited Scalability</h4>
+                                <p style="color: #64748b; margin: 0; font-size: 0.95rem; line-height: 1.6;">Scalable architecture for enterprises of all sizes</p>
+                            </div>
+                        </div>
+
+                        <div style="padding: 0; display: flex; align-items: flex-start; transition: all 0.3s ease;" onmouseover="this.style.transform='translateX(15px)';" onmouseout="this.style.transform='translateX(0)';">
+                            <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-right: 20px; flex-shrink: 0; box-shadow: 0 10px 30px rgba(245, 158, 11, 0.3);">
+                                <i class="fas fa-headset" style="color: white; font-size: 1.5rem;"></i>
+                            </div>
+                            <div>
+                                <h4 style="color: #d97706; margin: 0 0 8px 0; font-size: 1.15rem; font-weight: 700;">24/7 Expert Support</h4>
+                                <p style="color: #64748b; margin: 0; font-size: 0.95rem; line-height: 1.6;">24/7 expert support and continuous optimization</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: flex; gap: 20px; justify-content: center; margin: 60px 0; flex-wrap: wrap;">
+                <a href="Contact_Us.html" style="padding: 18px 50px; background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); color: white; text-decoration: none; border-radius: 12px; font-weight: 700; font-size: 1.05rem; display: flex; align-items: center; gap: 12px; box-shadow: 0 15px 35px rgba(37, 99, 235, 0.4); transition: all 0.3s ease; border: none; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 25px 50px rgba(37, 99, 235, 0.5)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 15px 35px rgba(37, 99, 235, 0.4)';">
+                    <i class="fas fa-play" style="font-size: 1rem;"></i>Request Platform Demo
+                </a>
+                <a href="index.html" style="padding: 18px 50px; background: transparent; color: #2563eb; text-decoration: none; border-radius: 12px; font-weight: 700; font-size: 1.05rem; display: flex; align-items: center; gap: 12px; border: 2.5px solid #2563eb; transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.backgroundColor='rgba(37, 99, 235, 0.1)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.backgroundColor='transparent'; this.style.transform='translateY(0)';">
+                    <i class="fas fa-arrow-left" style="font-size: 1rem;"></i>Back to Home
+                </a>
+            </div>
+        </section>
+    </main>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-main">
+            <div class="footer-col brand">
+                <div class="logo">
+                    <img src="images/logo.webp" alt="Logo">
+                </div>
+                <p class="footer-desc">
+                    A team of experienced IT professionals providing high-quality services and customized security solutions.
+                </p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">SecOps Center</h4>
+                <ul class="footer-links">
+                    <li><a href="#">D1: Operations</a></li>
+                    <li><a href="#">D3: Compliance</a></li>
+                    <li><a href="#">D4: Phoenix DR</a></li>
+                    <li><a href="#">D5: CloudSecApps</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="vuln_pilot.html">Vuln Pilot</a></li>
+                    <li><a href="#">SecOps</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Contact Us</h4>
+                <ul class="contact-info">
+                    <li><i class="fas fa-envelope"></i> security@5pilot.com</li>
+                    <li><i class="fas fa-phone"></i> +1 (555) 000-5PILOT</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Cyber Hub, Suite 101</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 5Pilot IT Company. All rights reserved.</p>
+            
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const dropdownTrigger = document.querySelector('.dropdown-trigger');
+    const parentLi = document.querySelector('.nav-dropdown');
+
+    dropdownTrigger.addEventListener('click', (e) => {
+        // Only run toggle logic on mobile (width <= 768)
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            parentLi.classList.toggle('active');
+        }
+    });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,854 @@
+body{
+    background-image: url('images/backgimg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+   
+   /* Base Styles */
+.custom-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    padding: 1rem 3%;
+    background: linear-gradient(135deg, #08102d 0%, #111c38 50%, #0a143e 100%);
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid #29bcec;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+
+}
+
+.nav-brand img { height: 45px; }
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-menu a {
+    color: #d0d8f4;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    
+}
+.nav-menu a:hover {
+    color: #b8dfea;
+    background: rgba(78, 109, 194, 0.1);
+    box-shadow: 0 0 15px rgba(106, 213, 243, 0.3);
+}
+
+/* Desktop Dropdown Logic */
+.nav-dropdown { position: relative; }
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(20, 36, 100, 0.98);
+    color: #ffffff;
+    line-height: 20px;
+    min-width: 200px;
+    display: none; /* Hidden by default */
+    list-style: none;
+    padding: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 8px 32px rgba(90, 211, 227, 0.3);
+    border: 1px solid rgba(10, 198, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+
+.dropdown-menu li a {
+    padding: 12px 20px;
+    display: block;
+    color: #e0e7ff;
+    transition: all 0.3s ease;
+}
+.dropdown-menu li a:hover {
+    background: rgba(133, 210, 229, 0.15);
+    color: #b8dbe3;
+    padding-left: 25px;
+}
+
+/* Show on Hover (Desktop) */
+@media (min-width: 769px) {
+    .nav-dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+
+/* Mobile View Styles (768px) */
+#nav-check { display: none; }
+
+@media (max-width: 768px) {
+    .nav-toggler {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+    }
+
+    .nav-toggler span {
+        width: 25px;
+        height: 3px;
+        background: #1c53a5;
+        transition: 0.3s;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fffcfc;
+        color: #1c53a5;
+        flex-direction: column;
+        gap: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.4s ease-in-out;
+        text-align: left;
+    }
+
+    .nav-menu li {
+        width: 100%;
+        /* border-bottom: 1px solid #333; */
+    }
+
+    .nav-menu li a {
+        padding: 15px 5%;
+        display: block;
+    }
+
+    /* Open Menu when Checkbox is checked */
+    #nav-check:checked ~ .nav-menu {
+        max-height: 500px; /* Adjust based on content */
+    }
+    .nav-menu li a:hover {
+        background: #dee2bc;
+    }
+
+    /* Mobile Dropdown Logic */
+    .dropdown-menu {
+        position: static;
+        background: #fffefe;
+        display: none; /* JS will toggle this */
+        width: 50%;
+    }
+   
+    .nav-dropdown.active .dropdown-menu {
+        display: block;
+    }
+    .nav-dropdown.active .dropdown-menu li:hover {
+        background: #dee2bc;
+    }
+}
+.banner-container {
+        position: relative;
+        width: 100%;
+        height: 200px; /* Adjust height as needed */
+        overflow: hidden;
+        border-radius: 12px;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    /* 2. The Image */
+    .banner-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Prevents stretching */
+        filter: brightness(60%); /* Darkens image so text is readable */
+    }
+
+    /* 3. The Text Overlay */
+    .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Perfectly centers the text */  
+        color: white;
+        font-size: 3rem;
+        font-weight: 800;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
+        
+        /* Animation */
+        animation: fadeInUp 1.2s ease-out;
+    }
+
+    /* Simple Animation */
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translate(-50%, -30%);
+        }
+        to {
+            opacity: 1;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+/* ------- */
+
+
+/* New Content Section Styles */
+.content-detail-section {
+    padding: 80px 0;
+    /* background-color: #ffffff; */
+    color: #51bee6;
+    line-height: 1.8;
+}
+
+.content-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.intro-block {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.intro-block h2 {
+    font-size: 2.2rem;
+    color: rgb(69, 233, 254);
+    margin-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.main-para {
+    font-size: 1.15rem;
+    max-width: 900px;
+    margin: 0 auto;
+    color: #c0cdde;
+}
+
+.main-para strong {
+    color: rgb(123, 184, 230);
+}
+
+.value-prop-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.value-card {
+    background: #d9dfe5;
+    padding: 40px;
+    border-radius: 15px;
+    border-left: 8px solid rgb(26, 188, 238);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.value-card h3 {
+    color: rgb(39, 106, 195);
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.value-card p {
+    font-size: 1rem;
+    color: #434c58;
+}
+
+/* Responsive adjustment for the new section */
+@media (max-width: 768px) {
+    .value-prop-grid {
+        grid-template-columns: 1fr;
+    }
+    .intro-block h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Image Animation Styles */
+.image-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    /* background: #f8fafc; */
+}
+
+.floating-image {
+    width: 85%;
+    height: 800px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    animation: float 6s ease-in-out infinite; /* Smooth floating animation */
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+.approach-section {
+    padding: 100px 0;
+    /* background: linear-gradient(180deg, #ffffff 0%, #f1f5f9 100%); */
+}
+
+.badge {
+    background: rgba(41, 67, 125, 0.1);
+    color: rgb(0, 200, 255);
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.timeline-container {
+    position: relative;
+    max-width: 900px;
+    margin: 50px auto 0;
+}
+
+/* The vertical connecting line */
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--accent), #e2e8f0);
+}
+
+.timeline-item {
+    position: relative;
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+    opacity: 0.9;
+    transition: all 0.4s ease;
+}
+
+.timeline-item:hover {
+    opacity: 1;
+    transform: translateX(10px);
+}
+
+.timeline-number {
+    width: 80px;
+    height: 80px;
+    background: var(--accent);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1.5rem;
+    z-index: 2;
+    flex-shrink: 0;
+    box-shadow: 0 0 20px rgba(31, 55, 107, 0.3);
+    border: 6px solid #f8fafc;
+}
+
+.timeline-content {
+    background: rgb(220, 241, 242);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    width: 100%;
+    border: 2px solid rgb(61, 201, 211);
+}
+
+.timeline-header {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #154779;
+    padding-bottom: 15px;
+}
+
+.timeline-header h3 {
+    color: rgb(8, 39, 118);
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+}
+
+.tagline {
+    color: rgb(29, 81, 90);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.detail-list {
+    list-style: none;
+    padding: 0;
+}
+
+.detail-list li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #0c1118;
+    position: relative;
+    padding-left: 25px;
+}
+
+.detail-list li::before {
+    content: "\f058"; /* FontAwesome check-circle */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: #10b981;
+}
+
+@media (max-width: 768px) {
+    .timeline-container::before { left: 20px; }
+    .timeline-number { width: 45px; height: 45px; font-size: 1rem; border-width: 3px; }
+    .timeline-item { gap: 15px; }
+    .timeline-content { padding: 20px; }
+}
+
+
+
+/* Pricing Section - Full Content Mode */
+.pricing-section {
+    padding: 100px 0;
+    /* background: #fcfdfe; */
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+    align-items: stretch;
+}
+
+.plan-card {
+    background: #d3e5f0;
+    border: 4px solid #0a9dcf;
+    border-radius: 24px;
+    padding: 45px 35px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.plan-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(31, 55, 107, 0.12);
+    border-color: var(--accent);
+}
+
+/* Featured Styling */
+.plan-card.featured {
+    border: 2px solid rgb(25, 189, 243);
+    /* background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%); */
+    transform: scale(1.03);
+    z-index: 5;
+}
+
+.popular-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--accent);
+    color: white;
+    padding: 6px 20px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.plan-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.plan-header h3 {
+    color: var(--accent);
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    font-weight: 800;
+}
+
+.plan-tagline {
+    color: var(--text-main);
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Styling for images within pricing cards */
+.plan-image {
+    width: 100%;
+    height: 160px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #b6c3d1; /* Fallback color */
+}
+
+.plan-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Zoom effect on image when the card is hovered */
+.plan-card:hover .plan-image img {
+    transform: scale(1.1);
+}
+
+
+.plan-intro {
+    color: #013b62;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 30px;
+    min-height: 70px;
+    margin-top: 10px;
+}
+
+.plan-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+    flex-grow: 1;
+}
+
+.plan-features li {
+    padding: 14px 0;
+    border-bottom: 1px solid #f1f5f9;
+    color: #334155;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 30px;
+}
+
+.plan-features li::before {
+    content: "\f058"; /* FontAwesome check-circle */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-size: 1.1rem;
+}
+
+.btn-wrapper {
+    text-align: center;
+}
+
+.plan-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 16px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    border: 2px solid var(--accent);
+    color: var(--accent);
+}
+
+.plan-btn:hover {
+    background: var(--accent);
+    color: white;
+    transform: scale(1.02);
+}
+
+.featured-btn {
+    background: var(--accent);
+    color: white;
+}
+
+.featured-btn:hover {
+    background: #162a53;
+    border-color: #162a53;
+}
+
+
+
+
+/* Research Lab Section */
+.lab-section {
+    padding: 100px 0;
+    /* background: #ffffff; */
+    overflow: hidden;
+    color: rgb(100, 221, 242);
+}
+
+.lab-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* Visual Side */
+.lab-visual {
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+}
+
+.lab-main-img {
+    width: 100%;
+    height: 400px;
+    border-radius: 20px;
+    display: block;
+    filter: brightness(0.9);
+}
+
+.lab-card-overlay {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: rgb(97, 222, 241);
+}
+
+.status-pulse {
+    width: 10px;
+    height: 10px;
+    background: #10b981;
+    border-radius: 50%;
+    animation: pulse-green 2s infinite;
+}
+
+@keyframes pulse-green {
+    0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+    70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(16, 185, 129, 0); }
+    100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+}
+
+.lab-stats {
+    position: absolute;
+    bottom: -30px;
+    right: 20px;
+    background: var(--accent);
+    color: white;
+    padding: 25px;
+    border-radius: 20px;
+    display: flex;
+    gap: 30px;
+    box-shadow: 0 20px 40px rgba(31, 55, 107, 0.3);
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-num {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    opacity: 0.8;
+    text-transform: uppercase;
+}
+
+/* Text Side */
+.tagline-large {
+    font-size: 1.2rem;
+    color: var(--text-main);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.lab-desc {
+    color: white;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+.workflow-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+    
+}
+
+.workflow-item {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+    border: 1px solid transparent;
+    
+}
+
+.workflow-item:hover {
+    background: #f8fafc;
+    border-color: #e2e8f0;
+    transform: translateX(10px);
+}
+
+.workflow-icon {
+    font-size: 1.8rem;
+}
+
+.workflow-info h4 {
+    color: rgb(89, 184, 228);
+    margin-bottom: 5px;
+}
+
+.workflow-info p {
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+.workflow-info p:hover{
+    color: rgb(17, 20, 23);
+}
+
+/* Animated Button */
+.flight-plan-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    background: var(--accent);
+    color: white;
+    padding: 18px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.flight-plan-btn:hover {
+    transform: scale(1.05);
+    background: #162a53;
+}
+
+.flight-plan-btn i {
+    transition: 0.3s;
+}
+
+.flight-plan-btn:hover i {
+    transform: translate(10px, -5px);
+}
+
+/* ==================== MOBILE OPTIMIZATION ==================== */
+@media (max-width: 768px) {
+
+    /* 1. Banner Section */
+    .overlay-text {
+        font-size: 1.8rem; /* Smaller text for mobile screens */
+        letter-spacing: 2px;
+        width: 90%;
+        text-align: center;
+    }
+
+    /* 2. Intro & Value Proposition */
+    .content-detail-section {
+        padding: 40px 0;
+    }
+
+    .intro-block h2 {
+        font-size: 1.6rem;
+    }
+
+    .value-prop-grid {
+        grid-template-columns: 1fr; /* Stack cards vertically */
+        gap: 20px;
+    }
+
+    .value-card {
+        padding: 25px;
+    }
+
+    /* 3. Floating Image Adjustments */
+    .image-wrapper {
+        padding: 20px 15px;
+    }
+
+    .floating-image {
+        height: 300px; /* Reduced from 600px for better mobile viewing */
+        width: 95%;    /* Occupies most of the screen width */
+        border-radius: 15px; /* Slightly smaller radius to match mobile aesthetics */
+        object-position: center; /* Ensures the most important part of the image stays visible */
+    }
+
+    
+    /* 5. Pricing Section */
+    .pricing-grid {
+        grid-template-columns: 1fr; /* Force single column */
+        padding: 0 10px;
+    }
+
+    .plan-card.featured {
+        transform: scale(1); /* Remove scale effect on mobile to prevent clipping */
+        margin: 20px 0;
+    }
+
+    /* 6. Research Lab Section */
+    .lab-wrapper {
+        grid-template-columns: 1fr; /* Stack visual and text */
+        gap: 40px;
+    }
+
+    .lab-main-img {
+        height: 250px;
+    }
+
+    .lab-stats {
+        bottom: -20px;
+        right: 10px;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .stat-num {
+        font-size: 1.1rem;
+    }
+
+    .workflow-item {
+        padding: 15px;
+    }
+
+    .flight-plan-btn {
+        width: 100%; /* Make button full width for easier tapping */
+        justify-content: center;
+    }
+}
