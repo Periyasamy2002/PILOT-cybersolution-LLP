@@ -1,0 +1,376 @@
+/* Media queries for SecOps.html */
+
+@media (max-width: 768px) {
+  /* Hero section */
+  section[style*="padding: 100px 40px"][style*="background: url"] {
+    padding: 60px 20px !important;
+  }
+
+  section[style*="padding: 100px 40px"][style*="background: url"] h1 {
+    font-size: 2.2rem !important;
+    margin: 15px 0 12px 0 !important;
+  }
+
+  section[style*="padding: 100px 40px"][style*="background: url"] span[style*="color: #dbeafe"] {
+    font-size: 0.8rem !important;
+  }
+
+  section[style*="padding: 100px 40px"][style*="background: url"] p {
+    font-size: 1.05rem !important;
+  }
+
+  /* Hero badge tags */
+  div[style*="display: flex; gap: 15px; margin-top: 30px"] {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+  }
+
+  div[style*="display: flex; gap: 15px; margin-top: 30px"] span {
+    width: 100% !important;
+    max-width: 250px !important;
+    font-size: 0.85rem !important;
+  }
+
+  /* Decorative circles */
+  div[style*="position: absolute; top: -100px"] {
+    display: none !important;
+  }
+
+  div[style*="position: absolute; bottom: -120px"] {
+    display: none !important;
+  }
+
+  /* Main section */
+  section[style*="padding: 80px 40px"] {
+    padding: 60px 20px !important;
+  }
+
+  /* Two column grid */
+  div[style*="display: grid; grid-template-columns: 1fr 1fr; gap: 50px"] {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+    margin-bottom: 50px !important;
+  }
+
+  div[style*="display: grid; grid-template-columns: 1fr 1fr; gap: 50px"] img {
+    height: 300px !important;
+  }
+
+  div[style*="display: grid; grid-template-columns: 1fr 1fr; gap: 50px"] h2 {
+    font-size: 2rem !important;
+    margin: 12px 0 18px 0 !important;
+  }
+
+  div[style*="display: grid; grid-template-columns: 1fr 1fr; gap: 50px"] p {
+    font-size: 0.95rem !important;
+  }
+
+  /* Content cards grid */
+  div[style*="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))"] {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    margin-bottom: 40px !important;
+  }
+
+  /* Individual content cards */
+  div[style*="border-top: 4px solid"] {
+    padding: 20px !important;
+  }
+
+  div[style*="border-top: 4px solid"] h4 {
+    font-size: 1rem !important;
+    margin-bottom: 10px !important;
+  }
+
+  div[style*="border-top: 4px solid"] p {
+    font-size: 0.85rem !important;
+  }
+
+  div[style*="border-top: 4px solid"] i[style*="font-size: 2rem"] {
+    font-size: 1.6rem !important;
+  }
+
+  /* Core Capabilities section */
+  div[style*="background:none; color: white; border-radius: 24px"] {
+    padding: 40px 24px !important;
+    margin: 40px 0 30px 0 !important;
+  }
+
+  div[style*="background:none; color: white; border-radius: 24px"] h3 {
+    font-size: 1.6rem !important;
+    margin: 0 0 8px 0 !important;
+  }
+
+  div[style*="background:none; color: white; border-radius: 24px"] p {
+    font-size: 0.9rem !important;
+  }
+
+  /* Capabilities grid */
+  div[style*="display: flex; align-items: center; margin-bottom: 40px"] {
+    flex-direction: column !important;
+    gap: 15px !important;
+    text-align: center !important;
+    margin-bottom: 30px !important;
+  }
+
+  div[style*="display: flex; align-items: center; margin-bottom: 40px"] i {
+    font-size: 1.5rem !important;
+  }
+
+  /* Feature/capability cards inside dark section */
+  div[style*="padding: 25px; background: linear-gradient(135deg"] {
+    padding: 18px !important;
+    margin-bottom: 12px !important;
+  }
+
+  div[style*="padding: 25px; background: linear-gradient(135deg"] i[style*="font-size: 1.3rem"] {
+    font-size: 1.1rem !important;
+  }
+
+  div[style*="padding: 25px; background: linear-gradient(135deg"] p[style*="font-weight: 800"] {
+    font-size: 0.95rem !important;
+    margin-bottom: 6px !important;
+  }
+
+  div[style*="padding: 25px; background: linear-gradient(135deg"] p[style*="font-size: 0.85rem"] {
+    font-size: 0.8rem !important;
+  }
+
+  /* Why Choose section */
+  div[style*="border-radius: 24px; padding: 80px 60px"] {
+    padding: 40px 20px !important;
+    margin: 40px 0 30px 0 !important;
+  }
+
+  div[style*="border-radius: 24px; padding: 80px 60px"] h2 {
+    font-size: 1.8rem !important;
+    margin: 0 0 8px 0 !important;
+  }
+
+  div[style*="border-radius: 24px; padding: 80px 60px"] i[style*="font-size: 2rem"] {
+    font-size: 1.4rem !important;
+  }
+
+  /* Why Choose benefits grid */
+  div[style*="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))"] {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+  }
+
+  div[style*="width: 50px; height: 50px; background: linear-gradient"] {
+    width: 42px !important;
+    height: 42px !important;
+    margin-right: 12px !important;
+  }
+
+  div[style*="width: 50px; height: 50px; background: linear-gradient"] i {
+    font-size: 1.2rem !important;
+  }
+
+  div[style*="width: 50px; height: 50px; background: linear-gradient"] + div h4 {
+    font-size: 1rem !important;
+  }
+
+  div[style*="width: 50px; height: 50px; background: linear-gradient"] + div p {
+    font-size: 0.85rem !important;
+  }
+
+  /* CTA buttons */
+  div[style*="display: flex; gap: 20px; justify-content: center"] {
+    flex-direction: column !important;
+    gap: 10px !important;
+    margin: 40px 0 !important;
+  }
+
+  div[style*="display: flex; gap: 20px; justify-content: center"] a {
+    width: 100% !important;
+    padding: 14px 20px !important;
+    font-size: 0.95rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Hero section */
+  section[style*="padding: 100px 40px"][style*="background: url"] {
+    padding: 40px 14px !important;
+  }
+
+  section[style*="padding: 100px 40px"][style*="background: url"] h1 {
+    font-size: 1.7rem !important;
+    margin: 12px 0 10px 0 !important;
+  }
+
+  section[style*="padding: 100px 40px"][style*="background: url"] span[style*="background: rgba(255, 255, 255, 0.15)"] {
+    padding: 0 10px !important;
+    font-size: 0.75rem !important;
+  }
+
+  section[style*="padding: 100px 40px"][style*="background: url"] p {
+    font-size: 0.9rem !important;
+  }
+
+  /* Hero badges */
+  div[style*="display: flex; gap: 15px; margin-top: 30px"] {
+    flex-direction: column !important;
+  }
+
+  div[style*="display: flex; gap: 15px; margin-top: 30px"] span {
+    width: 100% !important;
+    font-size: 0.75rem !important;
+    padding: 6px 12px !important;
+  }
+
+  /* Main section */
+  section[style*="padding: 80px 40px"] {
+    padding: 40px 14px !important;
+  }
+
+  /* Two column grid */
+  div[style*="display: grid; grid-template-columns: 1fr 1fr; gap: 50px"] {
+    gap: 16px !important;
+    margin-bottom: 30px !important;
+  }
+
+  div[style*="display: grid; grid-template-columns: 1fr 1fr; gap: 50px"] img {
+    height: 220px !important;
+  }
+
+  div[style*="display: grid; grid-template-columns: 1fr 1fr; gap: 50px"] h2 {
+    font-size: 1.4rem !important;
+    margin: 10px 0 14px 0 !important;
+  }
+
+  div[style*="display: grid; grid-template-columns: 1fr 1fr; gap: 50px"] span {
+    font-size: 0.75rem !important;
+  }
+
+  /* Content cards */
+  div[style*="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))"] {
+    gap: 12px !important;
+    margin-bottom: 30px !important;
+  }
+
+  div[style*="border-top: 4px solid"] {
+    padding: 16px !important;
+  }
+
+  div[style*="border-top: 4px solid"] h4 {
+    font-size: 0.9rem !important;
+  }
+
+  div[style*="border-top: 4px solid"] p {
+    font-size: 0.8rem !important;
+  }
+
+  div[style*="border-top: 4px solid"] i[style*="font-size: 2rem"] {
+    font-size: 1.4rem !important;
+  }
+
+  /* Core Capabilities section */
+  div[style*="background:none; color: white; border-radius: 24px"] {
+    padding: 28px 16px !important;
+    margin: 30px 0 20px 0 !important;
+  }
+
+  div[style*="background:none; color: white; border-radius: 24px"] h3 {
+    font-size: 1.3rem !important;
+  }
+
+  div[style*="background:none; color: white; border-radius: 24px"] p {
+    font-size: 0.85rem !important;
+  }
+
+  div[style*="background:none; color: white; border-radius: 24px"] i[style*="font-size: 1.8rem"] {
+    font-size: 1.4rem !important;
+  }
+
+  /* Feature cards in dark section */
+  div[style*="padding: 25px; background: linear-gradient(135deg"] {
+    padding: 14px !important;
+  }
+
+  div[style*="padding: 25px; background: linear-gradient(135deg"] i[style*="font-size: 1.3rem"] {
+    font-size: 1rem !important;
+  }
+
+  div[style*="padding: 25px; background: linear-gradient(135deg"] p[style*="font-weight: 800"] {
+    font-size: 0.85rem !important;
+    margin-bottom: 4px !important;
+  }
+
+  div[style*="padding: 25px; background: linear-gradient(135deg"] p[style*="font-size: 0.85rem"] {
+    font-size: 0.75rem !important;
+  }
+
+  div[style*="width: 50px; height: 50px"] {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  /* Why Choose section */
+  div[style*="border-radius: 24px; padding: 80px 60px"] {
+    padding: 28px 14px !important;
+    margin: 30px 0 20px 0 !important;
+  }
+
+  div[style*="border-radius: 24px; padding: 80px 60px"] h2 {
+    font-size: 1.4rem !important;
+  }
+
+  div[style*="border-radius: 24px; padding: 80px 60px"] i[style*="font-size: 2rem"] {
+    font-size: 1.2rem !important;
+  }
+
+  /* Why Choose benefits */
+  div[style*="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))"] {
+    gap: 12px !important;
+  }
+
+  div[style*="width: 50px; height: 50px; background: linear-gradient"] {
+    width: 38px !important;
+    height: 38px !important;
+    margin-right: 10px !important;
+  }
+
+  div[style*="width: 50px; height: 50px; background: linear-gradient"] i {
+    font-size: 1rem !important;
+  }
+
+  div[style*="width: 50px; height: 50px; background: linear-gradient"] + div h4 {
+    font-size: 0.85rem !important;
+    margin-bottom: 4px !important;
+  }
+
+  div[style*="width: 50px; height: 50px; background: linear-gradient"] + div p {
+    font-size: 0.75rem !important;
+  }
+
+  /* CTA buttons */
+  div[style*="display: flex; gap: 20px; justify-content: center"] {
+    gap: 8px !important;
+    margin: 30px 0 !important;
+  }
+
+  div[style*="display: flex; gap: 20px; justify-content: center"] a {
+    padding: 11px 16px !important;
+    font-size: 0.85rem !important;
+  }
+
+  div[style*="display: flex; gap: 20px; justify-content: center"] i {
+    font-size: 0.8rem !important;
+  }
+
+  /* General spacing reductions */
+  div[style*="margin-bottom: 80px"] {
+    margin-bottom: 40px !important;
+  }
+
+  div[style*="margin-bottom: 60px"] {
+    margin-bottom: 30px !important;
+  }
+
+  div[style*="margin-bottom: 50px"] {
+    margin-bottom: 25px !important;
+  }
+}

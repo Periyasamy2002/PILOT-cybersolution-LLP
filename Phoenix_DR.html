@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phoenix DR - Disaster Recovery</title>
     <link rel="stylesheet" href="shared-styles.css">
+    <link rel="stylesheet" href="phoenix_dr.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <nav class="custom-navbar">
         <div class="nav-brand">
-            <img src="images/logo.webp" alt="5Pilot Logo">
+            <a href="index.html">
+                <img src="images/logo.webp" alt="5Pilot Logo">
+            </a>
         </div>
 
         <input type="checkbox" id="nav-check">
@@ -45,85 +48,168 @@
 
 
     <main>
-        <section style="padding: 60px 40px; background: linear-gradient(135deg, rgba(31, 55, 107, 0.05) 0%, rgba(37, 99, 235, 0.05) 100%);">
-            <div style="max-width: 1200px; margin: 0 auto;">
-                <h1 class="page-title">Phoenix <span class="highlight">Disaster Recovery</span> <i class="fas fa-fire" style="color: #2563eb; margin-left: 15px;"></i></h1>
-                <p class="page-subtitle">Business continuity and resilient disaster recovery solutions for enterprise</p>
+        <!-- Enhanced Hero Banner -->
+        <section style="padding: 100px 40px; background: url(images/phoneix.jpg) no-repeat; background-size: cover; position: relative; overflow: hidden;">
+            <div style="position: absolute; top: -50%; right: -10%; width: 500px; height: 500px; background: rgba(255, 255, 255, 0.1); border-radius: 50%; filter: blur(40px);"></div>
+            <div style="position: absolute; bottom: -30%; left: -5%; width: 400px; height: 400px; background: rgba(255, 255, 255, 0.05); border-radius: 50%; filter: blur(40px);"></div>
+            <div style="max-width: 1200px; margin: 0 auto; position: relative; z-index: 1; text-align: right;">
+                <div style="display: inline-block; background: rgba(255, 255, 255, 0.15); padding: 10px 20px; border-radius: 50px; margin-bottom: 20px; backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);">
+                    <span style="color: #dbeafe; font-weight: 600; font-size: 0.9rem;"><i class="fas fa-fire" style="margin-right: 8px;"></i>D4: PHOENIX DR DIMENSION</span>
+                </div>
+                <h1 class="page-title" style="color: #fff; font-size: 3.5rem; margin-bottom: 20px; text-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);">Phoenix <span class="highlight" style="color: #fbbf24;">Disaster Recovery</span></h1>
+                <p class="page-subtitle" style="color: #dbeafe; font-size: 1.3rem; max-width: 700px; margin: 0 auto;margin-left: 500px;">Business continuity and resilient disaster recovery solutions ensuring zero downtime and rapid recovery</p>
+                <div style="margin-top: 30px; display: flex; gap: 15px; justify-content: right; flex-wrap: wrap;">
+                    <span style="background: rgba(255, 255, 255, 0.2); color: #dbeafe; padding: 8px 16px; border-radius: 20px; font-size: 0.9rem; backdrop-filter: blur(10px);"><i class="fas fa-shield-alt" style="margin-right: 8px;"></i>Resilience</span>
+                    <span style="background: rgba(255, 255, 255, 0.2); color: #dbeafe; padding: 8px 16px; border-radius: 20px; font-size: 0.9rem; backdrop-filter: blur(10px);"><i class="fas fa-sync" style="margin-right: 8px;"></i>Failover</span>
+                    <span style="background: rgba(255, 255, 255, 0.2); color: #dbeafe; padding: 8px 16px; border-radius: 20px; font-size: 0.9rem; backdrop-filter: blur(10px);"><i class="fas fa-map" style="margin-right: 8px;"></i>Geo-Distributed</span>
+                </div>
             </div>
         </section>
 
-        <section style="padding: 80px 40px; max-width: 1200px; margin: 0 auto;">
-            <div class="content-card">
-                <h3><i class="fas fa-rocket" style="color: #2563eb; margin-right: 10px;"></i>D4: Phoenix DR Overview</h3>
-                <p>Phoenix DR is our comprehensive <strong>disaster recovery and business continuity solution</strong>. We help your organization prepare for, respond to, and recover from any crisis with <strong>minimal downtime</strong> and <strong>maximum resilience</strong>. Our proactive approach ensures your critical business functions continue even in worst-case scenarios.</p>
-            </div>
-
-            <div class="content-card">
-                <h3><i class="fas fa-tasks" style="color: #2563eb; margin-right: 10px;"></i>Key Services</h3>
-                <ul class="animated-list">
-                    <li><strong>Business Continuity Planning</strong> - Comprehensive BCP strategy and documentation</li>
-                    <li><strong>Disaster Recovery Infrastructure</strong> - Redundant systems and failover architecture</li>
-                    <li><strong>RTO/RPO Optimization</strong> - Recovery time and point objective achievement</li>
-                    <li><strong>Regular DR Testing</strong> - Quarterly drills and tabletop exercises</li>
-                    <li><strong>Crisis Management</strong> - Incident response coordination and recovery procedures</li>
-                    <li><strong>Geo-Redundancy</strong> - Geographically distributed backup and recovery sites</li>
-                </ul>
-            </div>
-
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin: 40px 0;">
-                <div class="content-card" style="border-left: 4px solid #2563eb;">
-                    <h4 style="color: #1f376b; margin-bottom: 10px;"><i class="fas fa-hourglass-end" style="color: #2563eb; margin-right: 8px;"></i>Recovery Time Objective</h4>
-                    <p style="font-size: 0.95rem; color: #7d90aa;">Minimize downtime with engineered recovery procedures targeting minutes to hours, not days.</p>
-                </div>
-                <div class="content-card" style="border-left: 4px solid #2563eb;">
-                    <h4 style="color: #1f376b; margin-bottom: 10px;"><i class="fas fa-database" style="color: #2563eb; margin-right: 8px;"></i>Data Protection</h4>
-                    <p style="font-size: 0.95rem; color: #7d90aa;">Multiple backup copies with proven recovery validation ensure zero data loss.</p>
-                </div>
-                <div class="content-card" style="border-left: 4px solid #2563eb;">
-                    <h4 style="color: #1f376b; margin-bottom: 10px;"><i class="fas fa-map" style="color: #2563eb; margin-right: 8px;"></i>Geographic Distribution</h4>
-                    <p style="font-size: 0.95rem; color: #7d90aa;">Redundant systems across multiple locations protect against regional disasters.</p>
-                </div>
-            </div>
-
-            <div class="content-card" style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-left: 4px solid #0284c7;">
-                <h3 style="color: #0c4a6e;"><i class="fas fa-star" style="color: #0284c7; margin-right: 10px;"></i>Our Promise</h3>
-                <p style="color: #0c4a6e; margin-bottom: 15px;">With Phoenix DR, your critical systems are protected with:</p>
-                <ul class="animated-list" style="margin: 0;">
-                    <li><strong>Redundancy & Failover</strong> - Automatic failover to standby systems</li>
-                    <li><strong>Geo-Distributed Backups</strong> - Data replicated across multiple secure locations</li>
-                    <li><strong>Rapid Recovery</strong> - Documented procedures for fast restoration</li>
-                    <li><strong>Regular Testing</strong> - Proven and validated recovery procedures</li>
-                    <li><strong>24/7 Support</strong> - Expert guidance during recovery</li>
-                    <li><strong>Compliance Assurance</strong> - DR plans aligned with regulatory requirements</li>
-                </ul>
-            </div>
-
-            <div class="content-card">
-                <h3><i class="fas fa-chart-bar" style="color: #2563eb; margin-right: 10px;"></i>DR Plan Components</h3>
-                <p style="margin-bottom: 20px;">Our comprehensive DR solution includes:</p>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
-                    <div style="padding: 15px; background: #f8fafc; border-radius: 8px; border-left: 3px solid #2563eb;">
-                        <p style="font-weight: 600; color: #1f376b; margin-bottom: 5px;"><i class="fas fa-file-contract" style="color: #2563eb; margin-right: 8px;"></i>Documentation</p>
-                        <p style="font-size: 0.85rem; color: #7d90aa;">Complete recovery procedures and contact lists</p>
+        <section style="padding: 100px 40px; max-width: 1200px; margin: 0 auto;">
+            <!-- Overview Card -->
+            <div class="content-card" style="background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%); border-left: 6px solid #2563eb; margin-bottom: 60px; box-shadow: 0 10px 30px rgba(37, 99, 235, 0.15); border-radius: 12px;">
+                <div style="display: flex; align-items: flex-start; gap: 20px;">
+                    <div style="font-size: 2.5rem; color: #2563eb; min-width: 60px; text-align: center;">
+                        <i class="fas fa-rocket"></i>
                     </div>
-                    <div style="padding: 15px; background: #f8fafc; border-radius: 8px; border-left: 3px solid #2563eb;">
-                        <p style="font-weight: 600; color: #1f376b; margin-bottom: 5px;"><i class="fas fa-tools" style="color: #2563eb; margin-right: 8px;"></i>Infrastructure</p>
-                        <p style="font-size: 0.85rem; color: #7d90aa;">Backup systems and failover architecture</p>
-                    </div>
-                    <div style="padding: 15px; background: #f8fafc; border-radius: 8px; border-left: 3px solid #2563eb;">
-                        <p style="font-weight: 600; color: #1f376b; margin-bottom: 5px;"><i class="fas fa-flask-vial" style="color: #2563eb; margin-right: 8px;"></i>Testing</p>
-                        <p style="font-size: 0.85rem; color: #7d90aa;">Regular drills and validation exercises</p>
-                    </div>
-                    <div style="padding: 15px; background: #f8fafc; border-radius: 8px; border-left: 3px solid #2563eb;">
-                        <p style="font-weight: 600; color: #1f376b; margin-bottom: 5px;"><i class="fas fa-sync" style="color: #2563eb; margin-right: 8px;"></i>Maintenance</p>
-                        <p style="font-size: 0.85rem; color: #7d90aa;">Continuous plan updates and optimization</p>
+                    <div>
+                        <h3 style="color: #1e3a8a; margin-bottom: 12px; font-size: 1.5rem;">D4: Phoenix DR Overview</h3>
+                        <p style="color: #1e293b; line-height: 1.8;">Phoenix DR is our comprehensive <strong>disaster recovery and business continuity solution</strong>. We help your organization prepare for, respond to, and recover from any crisis with <strong>minimal downtime</strong> and <strong>maximum resilience</strong>. Our proactive approach ensures your critical business functions continue even in worst-case scenarios.</p>
                     </div>
                 </div>
             </div>
 
-            <div style="text-align: center; margin-top: 50px;">
-                <a href="Contact_Us.html" class="btn-primary"><i class="fas fa-clipboard" style="margin-right: 10px;"></i>Plan Your DR Strategy</a>
-                <a href="index.html" class="btn-secondary" style="margin-left: 15px;"><i class="fas fa-home" style="margin-right: 10px;"></i>Back to Home</a>
+            <!-- Key Services Section -->
+            <div style="margin-bottom: 80px;">
+                <div style="text-align: center; margin-bottom: 50px;">
+                    <h2 style="font-size: 2.5rem; color: #6dbbee; margin-bottom: 15px;"><i class="fas fa-tasks" style="color: #3156a6; margin-right: 15px;"></i>Key Services</h2>
+                    <p style="color: #a9b6c8; font-size: 1.1rem; max-width: 600px; margin: 0 auto;">Comprehensive disaster recovery and business continuity solutions</p>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px;">
+                    <div class="content-card" style="border-top: 4px solid #2563eb; background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%); cursor: pointer; transition: all 0.3s ease;">
+                        <div style="font-size: 2.5rem; color: #2563eb; margin-bottom: 15px; text-align: center;">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <h4 style="color: #1e40af; margin-bottom: 12px; text-align: center; font-size: 1.1rem;">Business Continuity Planning</h4>
+                        <p style="color: #1e293b; font-size: 0.95rem; text-align: center;">Comprehensive BCP strategy and documentation</p>
+                    </div>
+
+                    <div class="content-card" style="border-top: 4px solid #3b82f6; background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%); cursor: pointer; transition: all 0.3s ease;">
+                        <div style="font-size: 2.5rem; color: #3b82f6; margin-bottom: 15px; text-align: center;">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h4 style="color: #1e40af; margin-bottom: 12px; text-align: center; font-size: 1.1rem;">DR Infrastructure</h4>
+                        <p style="color: #1e40af; font-size: 0.95rem; text-align: center;">Redundant systems and failover architecture</p>
+                    </div>
+
+                    <div class="content-card" style="border-top: 4px solid #f59e0b; background: linear-gradient(135deg, #ffffff 0%, #fffbeb 100%); cursor: pointer; transition: all 0.3s ease;">
+                        <div style="font-size: 2.5rem; color: #f59e0b; margin-bottom: 15px; text-align: center;">
+                            <i class="fas fa-hourglass-end"></i>
+                        </div>
+                        <h4 style="color: #b45309; margin-bottom: 12px; text-align: center; font-size: 1.1rem;">RTO/RPO Optimization</h4>
+                        <p style="color: #92400e; font-size: 0.95rem; text-align: center;">Recovery time and point objective achievement</p>
+                    </div>
+
+                    <div class="content-card" style="border-top: 4px solid #8b5cf6; background: linear-gradient(135deg, #ffffff 0%, #f3f0ff 100%); cursor: pointer; transition: all 0.3s ease;">
+                        <div style="font-size: 2.5rem; color: #8b5cf6; margin-bottom: 15px; text-align: center;">
+                            <i class="fas fa-flask-vial"></i>
+                        </div>
+                        <h4 style="color: #6b21a8; margin-bottom: 12px; text-align: center; font-size: 1.1rem;">DR Testing</h4>
+                        <p style="color: #6b21a8; font-size: 0.95rem; text-align: center;">Quarterly drills and tabletop exercises</p>
+                    </div>
+
+                    <div class="content-card" style="border-top: 4px solid #ec4899; background: linear-gradient(135deg, #ffffff 0%, #fdf2f8 100%); cursor: pointer; transition: all 0.3s ease;">
+                        <div style="font-size: 2.5rem; color: #ec4899; margin-bottom: 15px; text-align: center;">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h4 style="color: #be123c; margin-bottom: 12px; text-align: center; font-size: 1.1rem;">Crisis Management</h4>
+                        <p style="color: #be123c; font-size: 0.95rem; text-align: center;">Incident response coordination and recovery</p>
+                    </div>
+
+                    <div class="content-card" style="border-top: 4px solid #06b6d4; background: linear-gradient(135deg, #ffffff 0%, #f0fdfa 100%); cursor: pointer; transition: all 0.3s ease;">
+                        <div style="font-size: 2.5rem; color: #06b6d4; margin-bottom: 15px; text-align: center;">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h4 style="color: #0e7490; margin-bottom: 12px; text-align: center; font-size: 1.1rem;">Geo-Redundancy</h4>
+                        <p style="color: #0e7490; font-size: 0.95rem; text-align: center;">Geographically distributed backup and recovery</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DR Strategy Section -->
+            <div class="content-card" style="background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%); color: white; border-left: none; margin-bottom: 60px; padding: 50px;">
+                <h3 style="color: white; margin-bottom: 20px; font-size: 1.8rem;"><i class="fas fa-shield-alt" style="color: #fbbf24; margin-right: 15px;"></i>Our DR Promise</h3>
+                <p style="color: #dbeafe; line-height: 1.8; margin-bottom: 25px; font-size: 1.05rem;"><strong>Enterprise-grade protection</strong> with proven recovery procedures and dedicated expert support ensuring business continuity.</p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-top: 30px;">
+                    <div style="background: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 8px; border-left: 3px solid #fbbf24;">
+                        <p style="font-weight: 600; color: #fbbf24; margin-bottom: 8px;"><i class="fas fa-check-circle" style="margin-right: 10px;"></i>Redundancy & Failover</p>
+                        <p style="color: #dbeafe; font-size: 0.95rem;">Automatic failover to standby systems</p>
+                    </div>
+                    <div style="background: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 8px; border-left: 3px solid #4ade80;">
+                        <p style="font-weight: 600; color: #4ade80; margin-bottom: 8px;"><i class="fas fa-check-circle" style="margin-right: 10px;"></i>Geo-Distributed Backups</p>
+                        <p style="color: #dbeafe; font-size: 0.95rem;">Data replicated across secure locations</p>
+                    </div>
+                    <div style="background: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 8px; border-left: 3px solid #60a5fa;">
+                        <p style="font-weight: 600; color: #60a5fa; margin-bottom: 8px;"><i class="fas fa-check-circle" style="margin-right: 10px;"></i>Rapid Recovery</p>
+                        <p style="color: #dbeafe; font-size: 0.95rem;">Documented procedures for fast restoration</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DR Plan Components -->
+            <div style="margin-bottom: 60px;">
+                <div style="text-align: center; margin-bottom: 50px;">
+                    <h2 style="font-size: 2.5rem; color: #5d9dcb; margin-bottom: 15px;">DR Plan Components</h2>
+                    <p style="color: #acb8c7; font-size: 1.1rem; max-width: 600px; margin: 0 auto;">Comprehensive elements for complete disaster recovery</p>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;">
+                    <div style="background: white; padding: 30px; border-radius: 12px; border-left: 4px solid #2563eb; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); transition: all 0.3s ease;">
+                        <div style="font-size: 2rem; color: #2563eb; margin-bottom: 15px;"><i class="fas fa-file-contract"></i></div>
+                        <h4 style="color: #1f376b; margin-bottom: 10px;">Documentation</h4>
+                        <p style="color: #7d90aa; font-size: 0.95rem;">Complete recovery procedures and contact lists</p>
+                    </div>
+
+                    <div style="background: white; padding: 30px; border-radius: 12px; border-left: 4px solid #3b82f6; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); transition: all 0.3s ease;">
+                        <div style="font-size: 2rem; color: #3b82f6; margin-bottom: 15px;"><i class="fas fa-server"></i></div>
+                        <h4 style="color: #1f376b; margin-bottom: 10px;">Infrastructure</h4>
+                        <p style="color: #7d90aa; font-size: 0.95rem;">Backup systems and failover architecture</p>
+                    </div>
+
+                    <div style="background: white; padding: 30px; border-radius: 12px; border-left: 4px solid #f59e0b; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); transition: all 0.3s ease;">
+                        <div style="font-size: 2rem; color: #f59e0b; margin-bottom: 15px;"><i class="fas fa-flask-vial"></i></div>
+                        <h4 style="color: #1f376b; margin-bottom: 10px;">Testing</h4>
+                        <p style="color: #7d90aa; font-size: 0.95rem;">Regular drills and validation exercises</p>
+                    </div>
+
+                    <div style="background: white; padding: 30px; border-radius: 12px; border-left: 4px solid #8b5cf6; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); transition: all 0.3s ease;">
+                        <div style="font-size: 2rem; color: #8b5cf6; margin-bottom: 15px;"><i class="fas fa-sync"></i></div>
+                        <h4 style="color: #1f376b; margin-bottom: 10px;">Maintenance</h4>
+                        <p style="color: #7d90aa; font-size: 0.95rem;">Continuous plan updates and optimization</p>
+                    </div>
+
+                    <div style="background: white; padding: 30px; border-radius: 12px; border-left: 4px solid #ec4899; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); transition: all 0.3s ease;">
+                        <div style="font-size: 2rem; color: #ec4899; margin-bottom: 15px;"><i class="fas fa-users"></i></div>
+                        <h4 style="color: #1f376b; margin-bottom: 10px;">Expert Support</h4>
+                        <p style="color: #7d90aa; font-size: 0.95rem;">24/7 expert guidance during recovery</p>
+                    </div>
+
+                    <div style="background: white; padding: 30px; border-radius: 12px; border-left: 4px solid #06b6d4; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); transition: all 0.3s ease;">
+                        <div style="font-size: 2rem; color: #06b6d4; margin-bottom: 15px;"><i class="fas fa-copyright"></i></div>
+                        <h4 style="color: #1f376b; margin-bottom: 10px;">Compliance</h4>
+                        <p style="color: #7d90aa; font-size: 0.95rem;">DR plans aligned with regulatory requirements</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div style="text-align: center; padding: 60px 40px; background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%); border-radius: 16px; margin-top: 80px;">
+                <h3 style="color: white; font-size: 2rem; margin-bottom: 15px;">Ready to Ensure Business Continuity?</h3>
+                <p style="color: #dbeafe; font-size: 1.1rem; margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto;">Protect your organization with comprehensive disaster recovery and business continuity planning.</p>
+                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                    <a href="Contact_Us.html" class="btn-primary" style="padding: 16px 40px; font-size: 1.05rem; background-color: #fbbf24; color: #1f376b; border: none;"><i class="fas fa-clipboard" style="margin-right: 10px;"></i>Plan Your DR Strategy</a>
+                    <a href="index.html" class="btn-secondary" style="padding: 16px 40px; font-size: 1.05rem; background: rgba(255, 255, 255, 0.2); border-color: white;"><i class="fas fa-home" style="margin-right: 10px;"></i>Back to Home</a>
+                </div>
             </div>
         </section>
     </main>

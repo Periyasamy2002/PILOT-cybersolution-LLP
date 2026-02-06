@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - 5Pilot Cyber Solutions</title>
     <link rel="stylesheet" href="shared-styles.css">
+    <link rel="stylesheet" href="contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <nav class="custom-navbar">
         <div class="nav-brand">
-            <img src="images/logo.webp" alt="5Pilot Logo">
+            <a href="index.html">
+                <img src="images/logo.webp" alt="5Pilot Logo">
+            </a>
         </div>
 
         <input type="checkbox" id="nav-check">
@@ -45,52 +48,95 @@
 
 
     <main>
-       <section style="padding: 60px 40px; background-image: url('images/cont.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-             <div style="max-width: 1200px; margin: 0 auto;">  
-                <h1 class="page-title" style="color: rgb(255, 253, 251);">Get In <span class="highlight">Touch</span> <i class="fas fa-headset" style="color: #c5c9ec; margin-left: 15px;"></i></h1>
-                <p class="page-subtitle" style="color: aliceblue;">Our team is ready to help with your cybersecurity needs and questions</p>
+       <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-inner">
+                <h1 class="page-title hero-title">Get In <span class="highlight">Touch</span> <i class="fas fa-headset hero-icon"></i></h1>
+                <p class="page-subtitle hero-sub">Our team is ready to help with your cybersecurity needs and questions</p>
             </div>
         </section>
 
-        <section style="padding: 80px 40px; max-width: 1200px; margin: 0 auto;">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 25px; margin-bottom: 50px;">
-                <div class="content-card" style="text-align: center; border-left: 4px solid #2563eb;">
-                    <h3 style="color: #1f376b;"><i class="fas fa-envelope" style="color: #2563eb; font-size: 2rem; margin-bottom: 15px; display: block;"></i>Email</h3>
-                    <p style="font-size: 1.1rem; color: #153270fd; font-weight: 600; margin: 10px 0;">info@5pilot.com</p>
-                    <p style="color: #7d90aa; font-size: 0.9rem;">Response within 24 hours</p>
+        <section class="contact-section">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <h3>Email</h3>
+                    <p class="muted strong">info@5pilot.com</p>
+                    <p class="muted">Response within 24 hours</p>
                 </div>
 
-                <div class="content-card" style="text-align: center; border-left: 4px solid #2563eb;">
-                    <h3 style="color: #1f376b;"><i class="fas fa-phone" style="color: #2563eb; font-size: 2rem; margin-bottom: 15px; display: block;"></i>Phone</h3>
-                    <p style="font-size: 1.1rem; color: #2563eb; font-weight: 600; margin: 10px 0;">+1 (555) 123-4567</p>
-                    <p style="color: #7d90aa; font-size: 0.9rem;">Mon-Fri, 9AM-6PM EST</p>
+                <div class="contact-card">
+                    <i class="fas fa-phone contact-icon"></i>
+                    <h3>Phone</h3>
+                    <p class="muted strong">+1 (555) 123-4567</p>
+                    <p class="muted">Mon-Fri, 9AM-6PM EST</p>
                 </div>
 
-                <div class="content-card" style="text-align: center; border-left: 4px solid #2563eb;">
-                    <h3 style="color: #1f376b;"><i class="fas fa-map-marker-alt" style="color: #2563eb; font-size: 2rem; margin-bottom: 15px; display: block;"></i>Office</h3>
-                    <p style="font-size: 0.95rem; color: #1f376b; font-weight: 600; margin: 10px 0;">Tech Hub, Business District</p>
-                    <p style="color: #7d90aa; font-size: 0.9rem;">City, State 12345 USA</p>
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt contact-icon"></i>
+                    <h3>Office</h3>
+                    <p class="muted strong">Tech Hub, Business District</p>
+                    <p class="muted">City, State 12345 USA</p>
                 </div>
 
-                <div class="content-card" style="text-align: center; border-left: 4px solid #2563eb;">
-                    <h3 style="color: #1f376b;"><i class="fas fa-clock" style="color: #2563eb; font-size: 2rem; margin-bottom: 15px; display: block;"></i>Hours</h3>
-                    <p style="font-size: 0.95rem; color: #1f376b; font-weight: 600; margin: 10px 0;">Monday - Friday</p>
-                    <p style="color: #7d90aa; font-size: 0.9rem;">9:00 AM - 6:00 PM EST</p>
+                <div class="contact-card">
+                    <i class="fas fa-clock contact-icon"></i>
+                    <h3>Hours</h3>
+                    <p class="muted strong">Monday - Friday</p>
+                    <p class="muted">9:00 AM - 6:00 PM EST</p>
                 </div>
             </div>
 
-            <div class="content-card" style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-left: 4px solid #0284c7; margin-bottom: 40px;">
-                <h3 style="color: #0c4a6e;"><i class="fas fa-message" style="color: #0284c7; margin-right: 10px;"></i>Quick Contact Form</h3>
-                <p style="color: #0c4a6e; margin-bottom: 25px;">Fill out the form below and our team will get back to you shortly:</p>
-                <form style="display: grid; gap: 15px;">
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
-                        <input type="text" placeholder="Your Full Name" required style="padding: 12px 15px; border: 1px solid #bae6fd; border-radius: 8px; font-family: inherit; background: white; color: #1f376b; font-size: 0.95rem;">
-                        <input type="email" placeholder="Your Email Address" required style="padding: 12px 15px; border: 1px solid #bae6fd; border-radius: 8px; font-family: inherit; background: white; color: #1f376b; font-size: 0.95rem;">
+            <div class="form-card">
+                <h3><i class="fas fa-message" aria-hidden="true"></i> Quick Contact Form</h3>
+                <p class="muted">Fill out the form below and our team will get back to you shortly:</p>
+                <form class="contact-form" aria-label="Contact form" id="contact-form">
+                    <div class="two-col">
+                        <div class="input-group">
+                            <label for="contact-name" class="sr-only">Full name</label>
+                            <span class="input-icon"><i class="fas fa-user" aria-hidden="true"></i></span>
+                            <input id="contact-name" type="text" name="name" placeholder="Your Full Name" required aria-required="true">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="contact-email" class="sr-only">Email address</label>
+                            <span class="input-icon"><i class="fas fa-envelope" aria-hidden="true"></i></span>
+                            <input id="contact-email" type="email" name="email" placeholder="Your Email Address" required aria-required="true">
+                        </div>
                     </div>
-                    <input type="text" placeholder="Subject" required style="padding: 12px 15px; border: 1px solid #bae6fd; border-radius: 8px; font-family: inherit; background: white; color: #1f376b; font-size: 0.95rem;">
-                    <textarea placeholder="Your Message..." rows="5" required style="padding: 12px 15px; border: 1px solid #bae6fd; border-radius: 8px; font-family: inherit; background: white; color: #1f376b; font-size: 0.95rem; resize: vertical;"></textarea>
-                    <button type="submit" class="btn-primary" style="padding: 14px 30px; font-size: 1rem;"><i class="fas fa-paper-plane" style="margin-right: 10px;"></i>Send Message</button>
+
+                    <div class="input-group">
+                        <label for="contact-subject" class="sr-only">Subject</label>
+                        <span class="input-icon"><i class="fas fa-tag" aria-hidden="true"></i></span>
+                        <input id="contact-subject" type="text" name="subject" placeholder="Subject" required aria-required="true">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="contact-message" class="sr-only">Message</label>
+                        <span class="input-icon input-icon--top"><i class="fas fa-comment" aria-hidden="true"></i></span>
+                        <textarea id="contact-message" name="message" placeholder="Your Message..." rows="5" required aria-required="true"></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary"><i class="fas fa-paper-plane" style="margin-right:8px"></i>Send Message</button>
+                        <button type="reset" class="btn-secondary">Reset</button>
+                    </div>
                 </form>
+            </div>
+
+            <div class="map-card">
+                <h3>Our Location</h3>
+                <div class="map-wrap">
+                    <iframe src="https://www.google.com/maps?q=Tech+Hub+Business+District&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Map showing company location"></iframe>
+                </div>
+                <p class="muted">Click the map to open in Google Maps.</p>
+            </div>
+
+            <div id="contact-toast" class="toast" role="status" aria-live="polite" aria-atomic="true" hidden>
+                <div class="toast-inner">
+                    <i class="fas fa-check-circle" aria-hidden="true"></i>
+                    <span class="toast-text">Your message was sent — we'll reply soon.</span>
+                </div>
             </div>
         </section>
     </main>
@@ -159,6 +205,46 @@
             e.preventDefault();
             parentLi.classList.toggle('active');
         }
+    });
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('contact-form');
+    const toast = document.getElementById('contact-toast');
+
+    if (!form) return;
+
+    form.addEventListener('submit', (e) => {
+        // Use constraint validation API first
+        if (!form.checkValidity()) {
+            // Let browser show validation UI
+            return;
+        }
+
+        e.preventDefault();
+
+        // Simulate sending (replace with real endpoint later)
+        const submitBtn = form.querySelector('button[type="submit"]');
+        submitBtn.disabled = true;
+        submitBtn.setAttribute('aria-busy', 'true');
+
+        setTimeout(() => {
+            form.reset();
+            submitBtn.disabled = false;
+            submitBtn.removeAttribute('aria-busy');
+
+            // show toast
+            toast.hidden = false;
+            toast.classList.add('show');
+            toast.focus();
+
+            // hide after 4s
+            setTimeout(() => {
+                toast.classList.remove('show');
+                toast.hidden = true;
+            }, 4000);
+        }, 900);
     });
 });
 </script>
